@@ -27,7 +27,6 @@ def split_hands (line):
             hand_1[0].append(card_number)
         else:
             hand_1[1].append(split_1[i])
-    #print(hand_1)
     split_2 = line[15:30].replace(" ","")
     for i in range(len(split_2)):
         if i % 2 == 0:
@@ -35,7 +34,6 @@ def split_hands (line):
             hand_2[0].append(card_number)
         else:
             hand_2[1].append(split_2[i])
-    #print(hand_2)
     return hand_1, hand_2
 
 #Function to evaluate the card of each player. It will return the status & an ordered list of the player's cards
@@ -67,7 +65,7 @@ def card_evaluation(hand):
     for card in hand[0]:
         counter.append(hand[0].count(card))
 
-    #Evaluate whether there is a "straight", and additional conditions for "Straight Flush" and "Royal Flush"
+    #Evaluate whether there is a "straight", additional conditions for "Straight Flush" and "Royal Flush"
     hand[0].sort()
     if (hand[0][-1] - hand[0][0] == 4) and (max(counter) == 1):
         status["Straight"]  = 5
