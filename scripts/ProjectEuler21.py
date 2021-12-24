@@ -1,3 +1,4 @@
+
 # Function to calculate the sum of all divisors
 def divisors_sum(n):
     sum = 0
