@@ -1,3 +1,4 @@
+
 import math
 
 # Function which is based on Eratosthenis siege to calculate whether a number is prime
