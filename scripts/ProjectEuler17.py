@@ -54,5 +54,4 @@ total_count += count + 100*len("sevenhundred") + 99*len("and")
 total_count += count + 100*len("eighthundred") + 99*len("and")
 total_count += count + 100*len("ninehundred") + 99*len("and")
 total_count += len("onethousand")
-
 print(total_count)
